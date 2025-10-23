@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Underdog&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        audio {
+            display: none;
+        }
+
+        .btn-primary {
+            border-color: #466baf;
+            padding: 10px;
+            margin-top: 50px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            font-family: 'Signika', sans-serif;
+            font-weight: 700;
+            color: #fff;
+            background-color: #054955;
+        }
+
+        .btn-primary:hover,
+        .btn-primary:focus,
+        .btn-primary:active,
+        .btn-primary.active {
+            border-color: #fff;
+            color: #061e35;
+            background-color: #dee4ee;
+        }
+
+        .bday {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 100;
+        }
+        .audio-song{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="ZUiY.gif" alt="stars" class="star">
+    <img src="5l03.gif" alt="ballon" class="ballon">
+    <div class="container">
+        <div class="birthdayCard">
+            <div class="cardFront">
+                <div class="front-text">
+                    <h3 class="happy">HAPPY</h3>
+                    <h3 class="bday">BIRTHDAY</h3>
+                    <h3 class="toyou">to you!</h3>
+                </div>
+                <div class="wrap-deco">
+                    <div class="decorations"></div>
+                    <div class="decorationsTwo"></div>
+                </div>
+                <div class="wrap-decoTwo">
+                    <div class="decorations"></div>
+                    <div class="decorationsThree"></div>
+                </div>
+                <div class="plate">
+                    <div class="cake"></div>
+                    <div class="flame"></div>
+                </div>
+            </div>
+            <div class="cardInside">
+                <div class="img">
+                    <img src="gif.gif" alt="Brotherpic" class="bdyboy">
+                </div>
+                <div class="inside-text">
+                    <h3 class="happy">HAPPY</h3>
+                    <h2 class="bday">BIRTHDAY</h2>
+                    <h3 class="toyou">to you!</h3>
+                </div>
+                <div class="wishes">
+                    <p>Happy Birthday Fresica 🎂! I know things haven't been great between us lately, but I still wish you the best for today and always.And you are still special to me. This is the last msg from me. And lastly thanks for everything you have done for me, Goodbye!. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="audio-song">
+        <audio class="song" loop>
+            <source src="hbd.mp3" type="audio/mpeg">
+            </source>
+        </audio>
+        <button class="btn-primary" id="play">Play Music</button>
+        <button class="btn-primary" id="stop" style="display:none;">Off Music</button>
+    </div>
+
+    <img src="4SHX.gif" alt="cat" class="cat">
+</body>
+<script src="effect.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+</html>
